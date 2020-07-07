@@ -75,6 +75,7 @@ ul[class="nav"] li a:hover {
 }
 .info .card h2 {
   display: block;
+  text-shadow: 2px 1px 1px red;
 }
 .info .card p {
   display: block;
