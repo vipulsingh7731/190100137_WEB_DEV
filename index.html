@@ -1,71 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About Me</title>
-    <link rel="stylesheet" href="style.css" />
-    
-    <!-- <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
-      crossorigin="anonymous"
-    /> -->
-  </head>
-  <body class="">
-    <h1 class="about-me">About Me</h1>
-    <ul class="nav">
-      <li><a href="https://www.facebook.com/chandarkal">Facebook</a></li>
-      <li><a href="https://github.com/vipulsingh7731">Github</a></li>
-    </ul>
-    <div class="pic">
-      <h1>Vipul Kumar Singh</h1>
-      <hr />
-      <img
-        src="https://scontent.fixc6-1.fna.fbcdn.net/v/t31.0-8/19264636_1497856270312836_5921137415472111072_o.jpg?_nc_cat=108&_nc_sid=09cbfe&_nc_ohc=O-G6_tkFbJYAX_aAIuu&_nc_ht=scontent.fixc6-1.fna&oh=8331ced1ea6161834b72df221c38ce29&oe=5F1E06D6"
-        alt=""
-        width="200px"
-      />
-    </div>
-    <p></p>
-    <div class="info">
-      <div class="card">
-        <h2>Education</h2>
-        <p><strong>1-12th(CBSE):</strong>The New Public School, CHD</p>
-        <p>Mechanical UG at IIT Bombay</p>
-      </div>
-      <div class="card">
-        <h2>Hobbies</h2>
-        <p>
-          I like to play video games, hangout with friends, indulge in deep
-          conversations, go out for a quiet walk. I don't have any such "cool"
-          Hobbies :p
-        </p>
-      </div>
-      <div class="card">
-        <h2>Ambitions</h2>
-        <p>
-          I dream to build an amazing personality over anything, become
-          successful and do something good to contribute something of my own to
-          society.
-        </p>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Me</title>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+
+      <a class="navbar-brand" href="/">Vipul Singh</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#about-me">About Me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://www.facebook.com/chandarkal">Facebook</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://github.com/vipulsingh7731">Github</a>
+          </li>
+          <li>
+            <a class="nav-link" href="#contact">Contact Me</a>
+          </li>
+        </ul>
       </div>
     </div>
-    <!-- <script
-      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+  </nav>
+
+  <div class="jumbotron">
+
+    <div class=" container my-auto">
+
+      <div class="row px-md-5">
+
+        <div class=" col-md-8 my-auto">
+          <h1 class="display-2">Hello There!</h1>
+          <hr class="my-4">
+          <p class="lead">
+            <span>You have come to my Landing page!!</span>
+            <br>
+            Scroll down to know more about me.
+          </p>
+        </div>
+        <div class=" col-md-4">
+          <img
+            src="https://scontent.fixc6-1.fna.fbcdn.net/v/t31.0-8/19264636_1497856270312836_5921137415472111072_o.jpg?_nc_cat=108&_nc_sid=09cbfe&_nc_ohc=O-G6_tkFbJYAX_aAIuu&_nc_ht=scontent.fixc6-1.fna&oh=8331ced1ea6161834b72df221c38ce29&oe=5F1E06D6"
+            alt="" class=" img-fluid">
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <div id="about-me" class="container">
+    <div class="heading text-center">About Me</div>
+    <hr>
+    <div class="sub-info">
+
+      <div class="card my-4">
+
+        <div class="card-body col-md-12">
+          <h1 class="card-title my-4">Education</h1>
+          <p class="card-text my-2">Starting from my nursery to 12th, I stayed and studied in only one School: The New
+            Public
+            School, Chandigarh.
+            My school was particularly famous for being the best school in Basketball in the City. Not much good in any
+            other sports :P. <br>
+            Currently, I am a soon to be 2nd year Mechanical Engineering Undergraduate at Indian Institute of Technology
+            Bombay.
+          </p>
+        </div>
+      </div>
+
+
+      <div class="card my-4">
+        <div class="card-body col-md-12 ">
+          <h1 class="card-title my-4">Hobbies</h1>
+          <p class="card-text my-2">I really enjoy playing video games, hangout with friends, indulge in deep
+            conversations, go out for a quiet walk, playing Badminton whenever I can.
+          </p>
+        </div>
+      </div>
+
+
+    </div>
+    <hr>
+    <div id="contact" class="container my-3">
+      <div class="card p-5">
+
+        <h1> Send Me Your Message</h1>
+
+        <form action="https://formspree.io/xpzykpap" method="POST">
+          <div class="form-group">
+            <label for="email">Email address</label>
+            <input type="email" name="_replyto" class="form-control" id="email" aria-describedby="emailHelp">
+          </div>
+          <div class="form-group">
+            <label for="message" class=" w-100">Message</label>
+            <textarea class="form-control" name="message"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
       integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
       integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
-      crossorigin="anonymous"
-    ></script> -->
-  </body>
+      crossorigin="anonymous"></script>
+</body>
+
 </html>
