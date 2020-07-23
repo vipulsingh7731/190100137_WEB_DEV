@@ -2,30 +2,40 @@
     .jumbotron {
         height: 80vh;
     }
-
+    
 }
-    .jumbotron hr {
-    border: 0;
-    height: 1px;
-    background-image: linear-gradient(
-      to right,
-      rgba(0, 0, 0, 0.5),
-      rgba(0, 0, 0, 0)
-    );
-  }
-   .jumbotron img {
-    border-radius: 50%;
-  }
-  
-  
-  .lead {
-      font-size: 1rem;
-  }
-  
-  .lead span{
-      font-size: 1.5rem;
-      font-weight: 300;
-  }
+
+.jumbotron{
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.jumbotron .container{
+    background-color: #efefef;
+    padding: 100px 10px 150px 50px;
+}
+
+.jumbotron hr {
+border: 0;
+height: 1px;
+background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0)
+);
+}
+.jumbotron img {
+border-radius: 50%;
+}
+
+
+.lead {
+    font-size: 1rem;
+}
+
+.lead span{
+    font-size: 1.5rem;
+    font-weight: 300;
+}
 
 #about-me .heading {
     font-size: 4rem;
@@ -33,4 +43,12 @@
 
 .card {
     width: 100%;
+}
+
+canvas{
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    overflow: hidden;
+    left: 0;
 }
