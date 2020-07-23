@@ -1,7 +1,15 @@
 var canvas = document.querySelector("canvas");
 
-canvas.width = innerWidth;
-canvas.height = innerHeight;
+const colourPallete = [
+    "#1a1a1d",
+    "#4e4e50",
+    "#6f2232",
+    "#950740",
+    "#c3073f"
+]
+
+canvas.width = canvas.parentElement.clientWidth;
+canvas.height = canvas.parentElement.clientHeight;
 
 var c = canvas.getContext("2d");
 
@@ -11,8 +19,8 @@ var mouse = {
 }
 
 window.addEventListener('resize', () => {
-    canvas.width = innerWidth;
-    canvas.height = innerHeight;
+    canvas.width = canvas.parentElement.clientWidth;
+    canvas.height = canvas.parentElement.clientHeight;
     init()
 })
 
@@ -197,11 +205,11 @@ function init() {
     circles = [];   //Resetting the array when Window Resized
     // circleSpc = [];  //Resetting the array when Window Resized
 
-    for (let i = 0; i < 400; i++) {
+    for (let i = 0; i < 100; i++) {
         var radius = randomInt(4, 20);
         var x = Math.random() * (canvas.width - radius * 2) + radius;
         var y = Math.random() * (canvas.height - radius * 2) + radius;
-        var color = randomColor(0.8);
+        var color = colourPallete[randomInt(0, 4)];
         //Circles Does not spawn over each other
         // if (i !== 0) {
         //     for (let j = 0; j < circles.length; j++) {

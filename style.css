@@ -1,8 +1,31 @@
-@media (min-width:1000px){
-    .jumbotron {
-        height: 80vh;
-    }
-    
+*{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #1a1a1d;
+    margin-top: 40px;
+}
+
+.bg-dark{
+    background-color: #6f2232!important;
+}
+
+.navbar-dark .navbar-brand{
+    color: #EDF5E1;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: rgb(224, 178, 185);
+    border: 1px solid transparent;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    font-weight: 400;
+    margin-right: 5px;
+}
+.navbar-dark .navbar-nav .nav-link:hover {
+    border-color: #c3073f;
+    color: #edf5e1;
 }
 
 .jumbotron{
@@ -10,23 +33,30 @@
 }
 
 .jumbotron .container{
-    background-color: #efefef;
-    padding: 100px 10px 150px 50px;
+    background-color: transparent;
+    border: 1px solid #c3073f;
+    
+}
+.jumbotron *{
+    color: #adb5bd;
+    border-radius: 30px;
 }
 
 .jumbotron hr {
 border: 0;
-height: 1px;
-background-image: linear-gradient(
-    to right,
-    rgba(0, 0, 0, 0.5),
-    rgba(0, 0, 0, 0)
-);
+border-radius: 50%;
+height: 3px;
+
 }
 .jumbotron img {
-border-radius: 50%;
+    border-radius: 50%;
 }
 
+.jumbotron h1{
+    color: #EDF5E1;
+    font-size: 4rem;
+    font-weight: normal;
+}
 
 .lead {
     font-size: 1rem;
@@ -39,16 +69,59 @@ border-radius: 50%;
 
 #about-me .heading {
     font-size: 4rem;
+    font-weight: 300;
+    color: #EDF5E1;
+}
+
+hr{
+    height: 1px;
+    background-color: hsl(342, 100%, 40%);
 }
 
 .card {
     width: 100%;
+    border-radius: 10px;
+    color: #EDF5E1;
+    border: 1px solid #950740;
+    background-color: transparent;
+}
+.card .card-title{
+    color: #c3073f;
+}
+
+.form-control{
+    background-color: transparent;
+    border: 1px solid #c3073f;
+    border-radius: 7px;
+}
+
+.form-control:focus{
+    border-color: #c3073f;
+    color: white;
+    background-color: transparent;
 }
 
 canvas{
-    position: fixed;
+    position: absolute;
     z-index: -1;
     top: 0;
-    overflow: hidden;
     left: 0;
+    overflow: hidden;
+}
+
+@media (min-width:1000px){
+    .jumbotron {
+        height: 80vh;
+    }
+    
+}
+
+@media (max-width:500px){
+    #about-me h1{
+        font-size: 20px;
+    }
+    #contact h1{
+        margin-top: 20px;
+        font-size: 20px!important;
+    }
 }
